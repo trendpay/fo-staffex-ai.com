@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staffex</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      crossorigin
+      src="/assets/currency-edeb98cb.js"
+    ></script>
+    <script type="module" crossorigin src="/assets/main-674b0769.js"></script>
+    <script
+      type="module"
+      crossorigin
+      src="/assets/preloader-37038c03.js"
+    ></script>
+    <link rel="stylesheet" href="/assets/currency-c04bc712.css" />
+    <link rel="stylesheet" href="/assets/main-226ebbb6.css" />
+  </head>
+
+  <body>
+    <div class="load-wrapper">
+      <img class="line left" src="/images/icons/loader-line.svg" alt="line" />
+      <img class="line right" src="/images/icons/loader-line.svg" alt="line" />
+      <div class="loading-content">
+        <div class="loading-text-wrap">
+          <p id="loading-text">Loading</p>
+          <span id="loading-percentage">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-value"></div>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper-page">
+      <main id="main">
+        <header id="header">
+          <div class="overflow"></div>
+          <a href="/" class="logo click-song" aria-label="Site Logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M9.93574 0L0.929932 5.17185V9.3196L5.29163 11.8413L14.4657 6.53827L15.7209 7.3313L6.64093 12.5574L9.97283 14.6598L19.0699 9.24543V5.32019L14.5799 2.70716L5.50558 8.03305L4.22189 7.25428L13.2277 1.91698L9.93574 0Z"
+              />
+              <path
+                d="M0.929932 10.7173V14.6596L9.9985 19.9998L19.0699 14.7538V10.7173L9.9985 15.9804L0.929932 10.7173Z"
+              />
+            </svg>
+          </a>
+          <div class="menu-block">
+            <nav class="menu-wrap">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a class="link link-close click-song" href="#about-us"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a class="link link-close click-song" href="#secretary"
+                    >SECRETARY</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a class="link link-close click-song" href="#smm-manager"
+                    >SMM MANAGER</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a class="link link-close click-song" href="#accountant"
+                    >Accountant</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a class="link link-close click-song" href="#mobile-app"
+                    >mobile app</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a class="link link-close click-song" href="/partners"
+                    >partners</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="song-block">
+              <p class="yer">©2025</p>
+              <button class="song-btn click-song">
+                <div class="on-btn">
+                  <span class="line1"></span>
+                  <span class="line2"></span>
+                  <span class="line3"></span>
+                </div>
+                <div class="enable-box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_533_1077)">
+                      <path
+                        d="M0.626953 11.7275L0.626953 0.272949L11.3549 6.00043L0.626953 11.7275Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_533_1077">
+                        <rect
+                          width="11.4545"
+                          height="11.4545"
+                          fill="white"
+                          transform="translate(0.269531 0.272949)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="enable-text">ENABLE THE SOUND</p>
+                </div>
+                <audio controls muted loop src="/files/site-song.mp3"></audio>
+              </button>
+            </div>
+          </div>
+          <button class="burger click-song">
+            <span></span>
+          </button>
+        </header>
+
+        <section class="bot-page-section">
+          <div class="container">
+            <div class="content">
+              <div class="video-wrap">
+                <div class="transparent-block"></div>
+                <video class="bg" autoplay muted loop playsinline>
+                  <source src="/files/bot-page-bg.mp4" type="video/mp4" />
+                  <source src="/files/bot-page-bg.webm" type="video/webm" />
+                </video>
+
+                <div class="name-box">
+                  <div class="avatar anim">
+                    <img class="bot" src="/images/avatar3.webp" alt="Bot" />
+                  </div>
+                  <div class="text-wrap">
+                    <p class="name anim">smm manager <span>diana</span></p>
+                    <p class="price anim"></p>
+                  </div>
+                </div>
+
+                <div class="video-block">
+                  <video
+                    class="bot bot-video-el bvel2"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="/files/manager/manager1.webm"
+                  ></video>
+                  <video
+                    class="bot-element bot-video-el bvel2"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="/files/manager/manager2.webm"
+                    data-feature="communicationCoordination"
+                  ></video>
+                  <video
+                    class="bot-element bot-video-el bvel2"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="/files/manager/secretary3.webm"
+                    data-feature="voiceRecognation"
+                  ></video>
+                  <video
+                    class="bot-element bot-video-el bvel2"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="/files/manager/manager4.webm"
+                    data-feature="documentPreparation"
+                  ></video>
+                  <video
+                    class="bot-element bot-video-el bvel2"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="/files/manager/manager5.webm"
+                    data-feature="expenceTracing"
+                  ></video>
+                </div>
+              </div>
+
+              <div class="tex-wrap">
+                <div class="tab-container">
+                  <div class="tabs">
+                    <button
+                      id="tab1"
+                      class="tab-button click-song active"
+                      onclick="changeTab(1)"
+                    >
+                      basic features
+                    </button>
+                    <button
+                      id="tab2"
+                      class="tab-button click-song"
+                      onclick="changeTab(2)"
+                    >
+                      Additional features
+                    </button>
+                  </div>
+
+                  <div id="content1" class="tab-content active">
+                    <ol class="accordion">
+                      <li class="accordion-item active">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Content Scheduling and Posting&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Manual or automatized
+                            <span>scheduling posts</span> for optimal times to
+                            <span>maximize reach</span> and engagement.
+                            Automated posting ensures
+                            <span>consistency in social media</span> activity.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Audience Engagement&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Monitoring and <span>managing interactions</span> on
+                            various social platforms, including
+                            <span>responding to comments</span>, messages, and
+                            reviews to foster community engagement.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Analytics and Reporting&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Analyzing data from social media platforms to
+                            <span>gauge the effectiveness of campaigns</span>
+                            and strategies. Generating
+                            <span>reports on metrics</span> like engagement
+                            rates, follower growth, and content performance.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;SEO Integration&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Incorporating search
+                            <span>engine optimization strategies</span> in
+                            content to
+                            <span>enhance visibility and reach</span> on social
+                            media.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Trend Monitoring&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Keeping tabs on the
+                            <span>latest social media trends</span>, hashtags,
+                            and topics to keep the content
+                            <span>relevant and engaging</span>.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Brand Voice Consistency&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Ensuring that all <span>content aligns</span> with
+                            the <span>brand’s voice</span>, values, and
+                            messaging guidelines.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Budget Management&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Managing <span>the budget</span> for social media
+                            activities, including
+                            <span>advertising and promotional events</span>.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Campaign Management&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            <span>Planning</span> and monitoring social media
+                            <span>campaigns across platforms</span> like
+                            Telegram, Twitter, etc.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Influencer Collaboration&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Sending messages to the
+                            <span>different influencers</span> to build an
+                            <span>collaborating relationship</span>.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="accordion-item">
+                        <button class="accordion-header click-song">
+                          <span class="arrow">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_812_56)">
+                                <path
+                                  d="M0.439575 14L0.439575 0L13.5515 7.00026L0.439575 14Z"
+                                  fill-opacity="0.7"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_812_56">
+                                  <rect width="14" height="14" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="accordion-title"
+                            >&#60;Crisis Management&#62;</span
+                          >
+                        </button>
+                        <div class="accordion-content">
+                          <p class="accordion-text">
+                            Monitoring and
+                            <span>addressing any negative comments</span> or PR
+                            crises that arise on social media in a
+                            <span>timely and effective manner</span>.
+                          </p>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                  <div id="content2" class="tab-content">
+                    <div class="block">
+                      <div
+                        class="item element-item click-song"
+                        data-feature="communicationCoordination"
+                      >
+                        <button class="item-btn">
+                          <div class="plus-check"></div>
+                        </button>
+                        <div class="item-img-wrap">
+                          <span class="number">1</span>
+                          <img src="/images/manager/tab1.webp" alt="Icon 1" />
+                        </div>
+                        <div class="item-text-wrap">
+                          <div class="item-title-wrap">
+                            <h2 class="item-title">
+                              <span>&#60;</span>Feedback and Insights
+                              Gathering<span>&#62;</span>
+                            </h2>
+                            <img
+                              class="icon-info"
+                              src="/images/icons/i.svg"
+                              alt="icon-info"
+                            />
+                          </div>
+                          <p class="item-text">
+                            <span>Collecting and analyzing</span> customer
+                            feedback from social media to
+                            <span>gain insights</span> into customer
+                            preferences.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="item element-item click-song"
+                        data-feature="voiceRecognation"
+                      >
+                        <button class="item-btn">
+                          <div class="plus-check"></div>
+                        </button>
+                        <div class="item-img-wrap">
+                          <span class="number">2</span>
+                          <img src="/images/manager/tab2.webp" alt="Icon 2" />
+                        </div>
+                        <div class="item-text-wrap">
+                          <div class="item-title-wrap">
+                            <h2 class="item-title">
+                              <span>&#60;</span>Competitor Analysis<span
+                                >&#62;</span
+                              >
+                            </h2>
+                            <img
+                              class="icon-info"
+                              src="/images/icons/i.svg"
+                              alt="icon-info"
+                            />
+                          </div>
+                          <p class="item-text">
+                            <span>Monitoring competitors’</span> social media to
+                            identify <span>opportunities and threats</span> in
+                            the market.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="item element-item click-song"
+                        data-feature="documentPreparation"
+                      >
+                        <button class="item-btn">
+                          <div class="plus-check"></div>
+                        </button>
+                        <div class="item-img-wrap">
+                          <span class="number">3</span>
+                          <img src="/images/manager/tab3.webp" alt="Icon 3" />
+                        </div>
+                        <div class="item-text-wrap">
+                          <div class="item-title-wrap">
+                            <h2 class="item-title">
+                              <span>&#60;</span>Content Creation and
+                              Curation<span>&#62;</span>
+                            </h2>
+                            <img
+                              class="icon-info"
+                              src="/images/icons/i.svg"
+                              alt="icon-info"
+                            />
+                          </div>
+                          <p class="item-text">
+                            <span>Generating engaging content</span> tailored to
+                            different social media platforms. This includes
+                            <span>creating text, images, and infographics</span>
+                            that resonate with the target audience.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="item element-item click-song"
+                        data-feature="expenceTracing"
+                      >
+                        <button class="item-btn">
+                          <div class="plus-check"></div>
+                        </button>
+                        <div class="item-img-wrap">
+                          <span class="number">4</span>
+                          <img src="/images/manager/tab4.webp" alt="Icon 4" />
+                        </div>
+                        <div class="item-text-wrap">
+                          <div class="item-title-wrap">
+                            <h2 class="item-title">
+                              <span>&#60;</span>Community Management<span
+                                >&#62;</span
+                              >
+                            </h2>
+                            <img
+                              class="icon-info"
+                              src="/images/icons/i.svg"
+                              alt="icon-info"
+                            />
+                          </div>
+                          <p class="item-text">
+                            Building and
+                            <span>maintaining an active and engaged</span>
+                            community. This may include
+                            <span> managing groups or forums</span> related to
+                            the brand.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="main-btn click-song" href="/smm-form">
+                  <span class="btn-text">order smm manager</span>
+                  <span class="icon-line top-left-line"></span>
+                  <span class="icon-line top-right-line"></span>
+                  <span class="icon-line bot-left-line"></span>
+                  <span class="icon-line bot-right-line"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="pop-up">
+          <button class="close-pop-up closePopup">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <rect
+                x="0.25"
+                y="0.25"
+                width="31.5"
+                height="31.5"
+                stroke="#B3B3B3"
+                stroke-width="0.5"
+              />
+              <path
+                d="M10.8144 9.87223L15.9999 15.0577L21.1853 9.87223L22.1281 10.815L16.9427 16.0005L22.1281 21.1859L21.1853 22.1287L15.9999 16.9433L10.8144 22.1287L9.87161 21.1859L15.0571 16.0005L9.87161 10.815L10.8144 9.87223Z"
+                fill="#B3B3B3"
+              />
+            </svg>
+          </button>
+          <div class="pop-up-content">
+            <div class="img-wrap">
+              <img src="/images/tab1.webp" alt="Icon 1" />
+            </div>
+            <div class="title-wrap">
+              <h2 class="item-title">
+                <span>&#60;</span>Communication Coordination<span>&#62;</span>
+              </h2>
+            </div>
+            <div class="text-wrap">
+              <p class="item-text">
+                <span>Handles</span> communication tasks, such as sending texts
+                or emails on behalf of the user.
+              </p>
+            </div>
+          </div>
+          <div class="btn-wrap">
+            <button class="main-btn click-song actionBtn">
+              <span class="btn-text">ADD Item</span>
+              <span class="icon-line top-left-line"></span>
+              <span class="icon-line top-right-line"></span>
+              <span class="icon-line bot-left-line"></span>
+              <span class="icon-line bot-right-line"></span>
+            </button>
+            <button class="main-btn transp click-song closePopup">
+              <span class="btn-text">Close</span>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
